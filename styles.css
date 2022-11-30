@@ -4,7 +4,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
-
+    --botao-azul-efeito: #3C92FA;
 }
 
 body {
@@ -42,6 +42,7 @@ body {
     display: block;
     text-decoration: none;
     margin: 1em;
+    transition: 0.5s all;
 }
 
 .botao_secundario{
@@ -116,7 +117,7 @@ body {
     color: var(--branco-princial);
 }
 
-.rodape{
+/*.rodape{
     text-align: center;
     margin-bottom: 5em;
 }
@@ -130,11 +131,7 @@ body {
 }
 
 .rodape__logo{
-    width: 102px;
-    height: 35.28px;
-    left: 669px;
-    top: 3128px;
-    margin-top: 9em;
+    margin-top: 8em;
 }
 
 .lista__link{ 
@@ -150,4 +147,46 @@ body {
     font-size: 14px;
     color: var(--cinza-secundario); 
     margin:1.5em 12em;
-} 
+}*/
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    margin: 2em 0;
+}
+
+.lista__link a {
+    color: var(--branco-princial);
+    margin-left: 3em ;
+    text-decoration: none;
+}
+
+.rodape__lista{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.rodape{
+    text-align: center;
+    margin: 0 3em;
+}
+
+.rodape__logo {
+    margin-bottom: 2em;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color:var(--cor-de-fundo);
+    transform: scale(1.2);
+}
